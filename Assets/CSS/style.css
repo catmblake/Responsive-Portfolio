@@ -180,6 +180,7 @@ h3, h2 {
 
 #contact-form ul {
   margin-bottom: 20px;
+  list-style-type: none;
 }
 
 #contact-form li {
@@ -215,14 +216,42 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+@media screen and (max-width: 980px) {
+  nav {
+    margin-right: 30px;
+  }
+  .work {
+    width: 47%;
+  }
+  #contact-form ul {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .auth-image {
+    width: 50%;
+  }
+  .work {
+    width: 45%;
+  }
+  #contact-form ul {
+    padding-inline-start: 0px;
+  }
+}
 @media screen and (max-width: 640px) {
 #logo {
   float: none;
+  display: block;
   width: 100%;
-  box-align: center;
 }
 nav {
   float: none;
+}
+nav a {
+  width: 32%;
+  text-align: center;
+  padding: 0px;
+  margin:0px;
 }
 .auth-image {
   width: 100%;
@@ -231,15 +260,7 @@ nav {
   float: none;
   width: 100%;
 }
+#contact-form ul {
+  padding-inline-start: 0px;
 }
-
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (max-width: 980px) {
-  nav {
-    margin-right: 30px;
-  }
 }
